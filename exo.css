@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	background-color: var(--bg);
+	color: var(--fg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	transition: background-color 250ms ease, color 250ms ease;
+}
+
+button#colorButton {
+	background: var(--btn-bg);
+	color: var(--btn-fg);
+	border: 1px solid rgba(0,0,0,0.08);
+	padding: 0.6rem 1rem;
+	font-size: 1rem;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+/* Dark theme variables */
+body.dark {
+	--bg: #111217;
+	--fg: #e6e6e6;
+	--btn-bg: #1f2227;
+	--btn-fg: #e6e6e6;
+}
